@@ -53,7 +53,7 @@
             lbl_GeneratedPassword.Name = "lbl_GeneratedPassword";
             lbl_GeneratedPassword.Size = new Size(314, 50);
             lbl_GeneratedPassword.TabIndex = 0;
-            lbl_GeneratedPassword.Text = "Password Shown Here";
+            lbl_GeneratedPassword.Text = "p a s s w o r d";
             lbl_GeneratedPassword.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // chb_IncludeAlphabets
