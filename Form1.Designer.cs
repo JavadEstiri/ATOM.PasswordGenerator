@@ -39,14 +39,15 @@
             trb_Complexity = new TrackBar();
             label1 = new Label();
             nud_Length = new NumericUpDown();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)trb_Complexity).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nud_Length).BeginInit();
             SuspendLayout();
             // 
             // lbl_GeneratedPassword
             // 
-            lbl_GeneratedPassword.BackColor = SystemColors.InactiveCaption;
-            lbl_GeneratedPassword.BorderStyle = BorderStyle.Fixed3D;
+            lbl_GeneratedPassword.BackColor = SystemColors.ControlLightLight;
+            lbl_GeneratedPassword.Enabled = false;
             lbl_GeneratedPassword.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_GeneratedPassword.Location = new Point(103, 163);
             lbl_GeneratedPassword.Name = "lbl_GeneratedPassword";
@@ -159,12 +160,24 @@
             nud_Length.TextAlign = HorizontalAlignment.Center;
             nud_Length.Value = new decimal(new int[] { 10, 0, 0, 0 });
             // 
+            // label2
+            // 
+            label2.BackColor = SystemColors.GradientActiveCaption;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(-5, 231);
+            label2.Name = "label2";
+            label2.Size = new Size(511, 37);
+            label2.TabIndex = 14;
+            label2.Text = "Atom - Web Design Team";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(501, 234);
+            ClientSize = new Size(501, 263);
+            Controls.Add(label2);
             Controls.Add(nud_Length);
             Controls.Add(label1);
             Controls.Add(trb_Complexity);
@@ -176,10 +189,10 @@
             Controls.Add(chb_IncludeSymbol);
             Controls.Add(chb_IncludeAlphabets);
             Controls.Add(lbl_GeneratedPassword);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             Name = "Form1";
-            Text = "Password Generator";
+            Text = "Atom - Password Generator";
             ((System.ComponentModel.ISupportInitialize)trb_Complexity).EndInit();
             ((System.ComponentModel.ISupportInitialize)nud_Length).EndInit();
             ResumeLayout(false);
@@ -199,5 +212,6 @@
         private TrackBar trb_Complexity;
         private Label label1;
         private NumericUpDown nud_Length;
+        private Label label2;
     }
 }
